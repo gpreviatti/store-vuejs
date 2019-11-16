@@ -1,4 +1,4 @@
-# store-vuecli
+# store-vuejs
 
 ## Project setup
 ```
