@@ -2,11 +2,7 @@
     <div class="container">
         <div style="margin: 10px;">
             <h1>Produtos</h1>
-            <form
-                method="post"
-                @submit.prevent="storeProduct"
-                style="margin: 20px;"
-            >
+            <form method="post" @submit.prevent="storeProduct">
                 <div class="form-group">
                     <label for="">Nome</label>
                     <input 
@@ -18,9 +14,9 @@
                         required
                     >
                 </div>
-
+                
                 <br>
-
+                
                 <div class="form-group">
                     <label for="">Quantidade</label>
                     <input 
@@ -57,14 +53,14 @@
                 <div class="form-group float-right">
                     <button
                         type="submit"
-                        class="btn btn-dark btn-lg"
+                        class="btn btn-success btn-md"
                     >
                         Cadastrar/Editar
                     </button>
                 </div>
             </form>
 
-            <table class="table table-dark">
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -103,14 +99,6 @@
 <style>
     button {
         margin: 10px;
-    }
-    body {
-        background-color: black;
-        color: white;
-    }
-    td, table, h1 {
-        color: white;
-        text-align: center;
     }
 </style>
 <script>
